@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.table-1,
+.table-2 {
+  width: 600px;
+}
+.table-1 > *,
+.table-2 > * {
+  width: 100%;
+}
+
+*[class*=row] {
+  width: 100%;
+}
+*[class*=row]:first-child *[class*=col] {
+  background: #58c9dd;
+  color: #fff;
+}
+
+*[class*=col] {
+  width: 16.66%;
+  text-align: center;
+  background: #99e0ed;
+  padding: 10px 15px;
+  font-family: Inter;
+  font-weight: 800;
+  color: #777;
+}
+*[class*=col]:first-child {
+  width: 33.33%;
+  background: #58c9dd;
+  color: #fff;
+  text-align: left;
+}
+
+.table-f {
+  margin-top: 50px;
+}
+.table-f__row {
+  width: 100%;
+  overflow: hidden;
+}
+.table-f__col {
+  box-sizing: border-box;
+  float: left;
+  margin: 1px;
+  width: calc(16.66% - 2px);
+}
+.table-f__col:first-child {
+  width: calc(33.33% - 2px);
+}
